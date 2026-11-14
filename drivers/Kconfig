@@ -115,6 +115,8 @@ source "sound/Kconfig"
 
 source "drivers/hid/Kconfig"
 
+source "drivers/minimiku/Kconfig"
+
 source "drivers/usb/Kconfig"
 
 source "drivers/mmc/Kconfig"

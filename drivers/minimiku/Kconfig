@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: GPL-2.0-only
+
+menu "MiniMiku drivers"
+
+config MINIMIKU_TEST
+	tristate "MiniMiku test module"
+	default m
+	help
+	  Build the MiniMiku test driver as a loadable kernel module.
+
+endmenu
