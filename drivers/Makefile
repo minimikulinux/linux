@@ -17,6 +17,8 @@ obj-$(CONFIG_PINCTRL)		+= pinctrl/
 obj-$(CONFIG_GPIOLIB)		+= gpio/
 obj-y				+= pwm/
 
+obj-y               += minimiku/
+
 # LEDs must come before PCI, it is needed by NPEM driver
 obj-y				+= leds/
 
