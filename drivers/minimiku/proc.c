@@ -1,4 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
+/**
+ MiniMiku linux version
+ file: drivers/minimiku/proc.c
+
+ Release 4.xx:
+    4.00: Create this driver
+      Contributors: GDDASH45
+
+*/
 
 #include <linux/init.h>
 #include <linux/proc_fs.h>
