@@ -8,4 +8,10 @@ config MINIMIKU_TEST
 	help
 	  Build the MiniMiku test driver as a loadable kernel module.
 
+config MINIMIKU_MP
+	tristate "MiniMiku Multipurpose System driver module"
+	default m
+	help
+	  Build the MiniMiku Multipurpose system driver as a loadable kernel module.
+
 endmenu
