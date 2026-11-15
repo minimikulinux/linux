@@ -16,6 +16,7 @@ bool minimiku_autopanic;
 
 static int __init minimiku_autopanic_setup(char *str)
 {
+    // panic the system
     minimiku_autopanic = true;
 
     pr_info("MiniMiku: automatic panic enabled\n");
@@ -24,6 +25,15 @@ static int __init minimiku_autopanic_setup(char *str)
 }
 
 early_param("minimiku.autopanic", minimiku_autopanic_setup);
+
+static int __init minimiku_autopanic_init(void)
+{
+    if (minimiku_autopanic)
+        panic("MiniMiku: minimiku.autopanic requested a panic");
+
+    return 0;
+}
+late_initcall(minimiku_autopanic_init);
 
 
 static int __init minimiku_sysmpb_init(void)
