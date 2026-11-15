@@ -12,7 +12,7 @@ For more information, look at ./FREE.md
 
 const char minimiku_hwname[] = MINIMIKU_HWNAME;
 
-bool minimiku_autopanic
+bool minimiku_autopanic;
 
 static int __init minimiku_autopanic_setup(char *str)
 {
