@@ -14,4 +14,10 @@ config MINIMIKU_MP
 	help
 	  Build the MiniMiku Multipurpose system driver as a loadable kernel module.
 
+config MINIMIKU_HWNAME
+	string "MiniMiku hardware name"
+	default "MyComputer"
+	help
+	  Set the hardware name reported by MiniMiku Linux.
+
 endmenu
