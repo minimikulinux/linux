@@ -28,6 +28,7 @@
 *.gcno
 *.gcda
 *.gz
+*.p.sh
 *.header-check
 *.i
 *.ko
