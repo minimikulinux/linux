@@ -20,4 +20,12 @@ config MINIMIKU_HWNAME
 	help
 	  Set the hardware name reported by MiniMiku Linux.
 
+config MINIMIKU_MLOG
+	bool "MiniMiku kernel logging device"
+	depends on MISC_DEVICES
+	default y
+	help
+	  Enable the MiniMiku logging subsystem.
+	  Provides an independent kernel log buffer through /dev/mlog.
+
 endmenu
